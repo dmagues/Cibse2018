@@ -1,0 +1,140 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+%\documentclass[a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage[latin1]{inputenc}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{diagbox}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{fancyhdr}
+\usepackage{tabulary}
+\usepackage{soul}
+\usepackage{rotating}
+\usepackage{framed}
+\usepackage[normalem]{ulem}
+\usepackage{subfigure}
+
+% Geovanny Need For R Swave
+\usepackage{graphicx}
+\usepackage{standalone}
+\usepackage{import}
+\graphicspath{{tex-files/}} 
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor pre-sen-cia}
+\hyphenation{la-bo-ra-to-rio cum-pli-mien-to pri-ma-rio u-sa-do rea-li-za-do}
+\hyphenation{pri-ma-rios u-sa-bi-li-dad re-troali-men-ta-c}
+
+% Para escribir notas
+\newcommand{\odnote}[1]{\textcolor{red}{[OD:#1]}}
+\newcommand{\rodnote}[1]{\textcolor{blue}{[RF:#1]}}
+
+\usepackage{url}
+\urldef{\mailsa}\path|daniel.magues@estudiante.uam.es|
+\urldef{\mailsb}\path|erfonseca@espe.edu.ec|
+\urldef{\mailsc}\path|john.castro@uda.cl|
+\urldef{\mailsd}\path|silvia.acunna@uam.es|
+
+%\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\refname}{Referencias}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Evaluation Usability Techniques Adopted in Agile Development Processes}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{Evaluation Usability Techniques}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Daniel~A.~Mag\"{u}es$^{1}$
+%\thanks{Please note that the LNCS Editorial assumes that all authors have used the western naming convention, with given names preceding surnames. This determines the structure of the names in the running heads and the author index.}%
+\and Efra\'in R. Fonseca C.$^{2}$ \and John W. Castro$^{3}$ \and Silvia T. Acu\~na$^{1}$}
+%
+\authorrunning{Daniel~A.~Mag\"{u}es et al.}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{$^{1}$Escuela Polit\'{e}cnica Superior, Universidad Aut\'{o}noma de Madrid, Madrid, Espa\~na
+\\$^{2}$Departamento de Ciencias de la Computación, Universidad de las Fuerzas Armadas ESPE, Sangolqu\'i, Ecuador
+\\$^{3}$Departamento de Ingeniería Informática y Ciencias de la Computación, Universidad de Atacama, Copiap\'o, Chile
+\\
+%\url{http://www.springer.com/lncs}}
+\mailsa\\	
+\mailsb\\
+\mailsc\\
+\mailsd\\
+}
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+%\toctitle{Lecture Notes in Computer Science}
+%\tocauthor{Authors' Instructions}
+\maketitle
+
+\input{tex/abstract}
+
+\input{tex/introduction}
+
+\input{tex/related}
+
+\input{tex/method}
+
+\input{tex/synthesis}
+
+\input{tex/results}
+
+\input{tex/conclusions}
+
+\input{tex/Acknowledgments}
+
+
+%References
+\bibliographystyle{splncs03}
+\bibliography{Bibliografia}
+
+
+\end{document}
